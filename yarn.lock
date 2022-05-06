@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-"@antfu/utils@^0.5.0":
+"@antfu/utils@^0.5.0", "@antfu/utils@^0.5.1":
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/@antfu/utils/-/utils-0.5.1.tgz#7eb6764878adb715daff20019e5a15fd63d93342"
   integrity sha512-8Afo0+xvYe1K8Wm4xHTymfTkpzy36aaqDvhXIayUwl+mecMG9Xzl3XjXa6swG6Bk8FBeQ646RyvmsYt6+2Be9g==
@@ -169,6 +169,27 @@
   version "3.2.33"
   resolved "https://registry.yarnpkg.com/@vue/shared/-/shared-3.2.33.tgz#69a8c99ceb37c1b031d5cc4aec2ff1dc77e1161e"
   integrity sha512-UBc1Pg1T3yZ97vsA2ueER0F6GbJebLHYlEi4ou1H5YL4KWvMOOWwpYo9/QpWq93wxKG6Wo13IY74Hcn/f7c7Bg==
+
+"@vueuse/core@^8.4.2":
+  version "8.4.2"
+  resolved "https://registry.yarnpkg.com/@vueuse/core/-/core-8.4.2.tgz#e5be73f40394150e6a1b6abd59e5adb7c6bb6c1f"
+  integrity sha512-dUVU96lii1ZdWoNJXauQNt+4QrHz1DKbuW+y6pDR2N10q7rGZJMDU7pQeMcC2XeosX7kMODfaBuqsF03NozzLg==
+  dependencies:
+    "@vueuse/metadata" "8.4.2"
+    "@vueuse/shared" "8.4.2"
+    vue-demi "*"
+
+"@vueuse/metadata@8.4.2":
+  version "8.4.2"
+  resolved "https://registry.yarnpkg.com/@vueuse/metadata/-/metadata-8.4.2.tgz#b33e6b7bd5ca69e3f24ea41b149267118bcd566f"
+  integrity sha512-2BIj++7P0/I5dfMsEe8q7Kw0HqVAjVcyNOd9+G22/ILUC9TVLTeYOuJ1kwa1Gpr+0LWKHc6GqHiLWNL33+exoQ==
+
+"@vueuse/shared@8.4.2":
+  version "8.4.2"
+  resolved "https://registry.yarnpkg.com/@vueuse/shared/-/shared-8.4.2.tgz#5900f06ff78bd8b6df4cbf48f8ca82dd6d9747d1"
+  integrity sha512-hILXMEjL8YQhj1LHN/HZ49UThyfk8irTjhele2nW+L3N55ElFUBGB/f4w0rg8EW+/suhqv7kJJPTZzvHCqxlIw==
+  dependencies:
+    vue-demi "*"
 
 anymatch@~3.1.2:
   version "3.1.2"
@@ -590,6 +611,18 @@ typescript@^4.5.4:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.6.4.tgz#caa78bbc3a59e6a5c510d35703f6a09877ce45e9"
   integrity sha512-9ia/jWHIEbo49HfjrLGfKbZSuWo9iTMwXO+Ca3pRsSpbsMbc7/IU8NKdCZVRRBafVPGnoJeFL76ZOAA84I9fEg==
 
+unplugin-auto-import@^0.7.1:
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/unplugin-auto-import/-/unplugin-auto-import-0.7.1.tgz#3ad04277254f9fc1bcf18ceb71addb4798bbac7c"
+  integrity sha512-9865OV9eP99PNxHR2mtTDExeN01m4M9boT5U2BtIwsU1wDRsaFIYWLwcCBEjvXzXfTTC2NNMskhHGVAMfL2WgA==
+  dependencies:
+    "@antfu/utils" "^0.5.1"
+    "@rollup/pluginutils" "^4.2.0"
+    local-pkg "^0.4.1"
+    magic-string "^0.26.1"
+    resolve "^1.22.0"
+    unplugin "^0.6.1"
+
 unplugin-vue-components@^0.19.3:
   version "0.19.3"
   resolved "https://registry.yarnpkg.com/unplugin-vue-components/-/unplugin-vue-components-0.19.3.tgz#4c0aa419d118aee1c010d0da9d38ead45e735d63"
@@ -626,6 +659,11 @@ vite@^2.9.7:
     rollup "^2.59.0"
   optionalDependencies:
     fsevents "~2.3.2"
+
+vue-demi@*:
+  version "0.12.5"
+  resolved "https://registry.yarnpkg.com/vue-demi/-/vue-demi-0.12.5.tgz#8eeed566a7d86eb090209a11723f887d28aeb2d1"
+  integrity sha512-BREuTgTYlUr0zw0EZn3hnhC3I6gPWv+Kwh4MCih6QcAeaTlaIX0DwOVN0wHej7hSvDPecz4jygy/idsgKfW58Q==
 
 vue-tsc@^0.34.7:
   version "0.34.11"
