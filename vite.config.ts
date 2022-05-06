@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
+import Inspect from 'vite-plugin-inspect'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -22,5 +23,9 @@ export default defineConfig({
         {'@vueuse/core':["useTitle","useStorage"]}
       ]
     }),
+    // 检查 Vite 插件的中间状态
+    // https://github.com/antfu/vite-plugin-inspect
+    // https://localhost:3000/__inspect/
+    Inspect(), // only applies in dev mode 
   ]
 })
